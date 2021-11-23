@@ -3,7 +3,7 @@ import { Accordion } from 'react-bootstrap';
 function Summary() {
 
   return (
-    <div>
+    <div className="summary">
     <Accordion flush >
       <Accordion.Item eventKey="1">
         <Accordion.Header >Topic 1</Accordion.Header>

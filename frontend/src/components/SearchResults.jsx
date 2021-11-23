@@ -16,7 +16,7 @@ function SearchResults() {
   
   
   return (
-    <div>
+    <div className="search-results">
     <Accordion>
     <Accordion.Item eventKey="1">
       <Accordion.Header>Company - Title{circle}{circle}{circle}</Accordion.Header>

@@ -7,6 +7,8 @@ import Footer from "./components/Footer"
 import Results from './pages/Results';
 import HomePage from './pages/HomePage';
 
+import "./styles/Common.css";
+
 function App() {
   return (
     <div>
