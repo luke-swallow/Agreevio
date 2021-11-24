@@ -8,16 +8,22 @@ import Results from './pages/Results';
 import HomePage from './pages/HomePage';
 
 import "./styles/Common.css";
+import Enterprise from './pages/Enterprise';
+
+// enterprise component needs to be by itself. 
+// how do I do that
 
 function App() {
   return (
     <div>
+      
     <Header />
     <BrowserRouter>
     <Routes>
       <Route path="/" element={<HomePage />} />
       <Route path="/search" element={<SearchAgreements />} />
       <Route path="/analyze" element={<AnaylzeAgreement />} />
+      <Route path="/enterprise" element={<Enterprise />} />
     </Routes>
     </BrowserRouter>
     <Footer />

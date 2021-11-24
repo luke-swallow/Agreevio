@@ -8,9 +8,9 @@ function Footer() {
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="me-auto">
-          <Nav.Link href="#search">About</Nav.Link>
-          <Nav.Link href="#analyze">Terms and Conditions</Nav.Link>
-          <Nav.Link href="#analyze">Enterprise System</Nav.Link>
+          <Nav.Link href="/about">About</Nav.Link>
+          <Nav.Link href="/terms">Terms and Conditions</Nav.Link>
+          <Nav.Link href="/enterprise">Enterprise System</Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Container>
