@@ -1,11 +1,11 @@
 import { Navbar, Nav, Container, Image, Figure } from 'react-bootstrap';
-import logo from "../assets/logos/logo.png";
-
+import logo from "../assets/logos/logo.jpg";
+import "../styles/Header.css";
 
 function Header(){
   return(
-    <Navbar bg="light" expand="lg">
-      <Container>
+    <Navbar bg="light" >
+      <Container className="navbar">
         <Nav.Link href="/"><Navbar.Brand>
           <Figure>
             <Figure.Image width={150} height={100} src={logo} />
@@ -13,7 +13,7 @@ function Header(){
           </Navbar.Brand></Nav.Link>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
+          <Nav className="me-auto header-buttons">
             <Nav.Link href="/search">Search</Nav.Link>
             <Nav.Link href="/analyze">Analyze</Nav.Link>
           </Nav>

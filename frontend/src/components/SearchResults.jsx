@@ -5,6 +5,7 @@ function SearchResults() {
   
   const circleStyle = {
     marginLeft:10,
+    marginTop: 5,
     display:"inline-block",
     backgroundColor: "red",
     borderRadius: "50%",
@@ -17,7 +18,7 @@ function SearchResults() {
   
   return (
     <div className="search-results">
-    <Accordion>
+    <Accordion >
     <Accordion.Item eventKey="1">
       <Accordion.Header>Company - Title{circle}{circle}{circle}</Accordion.Header>
       <Accordion.Body>

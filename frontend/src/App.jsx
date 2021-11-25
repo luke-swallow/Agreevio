@@ -24,6 +24,7 @@ function App() {
       <Route path="/search" element={<SearchAgreements />} />
       <Route path="/analyze" element={<AnaylzeAgreement />} />
       <Route path="/enterprise" element={<Enterprise />} />
+      <Route path="result" element={<Results />} />
     </Routes>
     </BrowserRouter>
     <Footer />

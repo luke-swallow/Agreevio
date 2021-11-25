@@ -1,15 +1,10 @@
-import { InputGroup, FormControl } from 'react-bootstrap';
+import { InputGroup, FormControl, Button } from 'react-bootstrap';
 import SearchResults from '../components/SearchResults';
 import "../styles/Search.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function SearchAgreements(){
 
-  /**
-   * I need to center this. Centering is something that
-   * should be common in oother elements as well.
-   * I don't want to import another css file since there 
-   * will be repetive import statement. How do I do this?
-   */
 
   return(
   <div className="center">
@@ -18,7 +13,9 @@ function SearchAgreements(){
         placeholder="Company Name"
         aria-describedby="basic-addon2"
       />
-      <InputGroup.Text id="basic-addon2">Search</InputGroup.Text>
+      <Button className="search-button" id="button-addon2">
+      Button
+    </Button>
     </InputGroup>
     <SearchResults />
 
