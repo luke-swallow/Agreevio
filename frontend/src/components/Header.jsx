@@ -1,10 +1,10 @@
-import { Navbar, Nav, Container, Image, Figure } from 'react-bootstrap';
+import { Navbar, Nav, Container, Figure } from 'react-bootstrap';
 import logo from "../assets/logos/logo.jpg";
 import "../styles/Header.css";
 
 function Header(){
   return(
-    <Navbar bg="light" expand="lg">
+    <Navbar  expand="lg">
       <Container className="navbar">
         <Nav.Link href="/"><Navbar.Brand>
           <Figure>
