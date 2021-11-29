@@ -7,7 +7,7 @@ function SearchResults() {
     marginLeft:10,
     marginTop: 5,
     display:"inline-block",
-    backgroundColor: "red",
+    backgroundColor: "blue",
     borderRadius: "50%",
     width:15,
     height:15,
@@ -20,7 +20,7 @@ function SearchResults() {
     <div className="search-results">
     <Accordion >
     <Accordion.Item eventKey="1">
-      <Accordion.Header>Company - Title{circle}{circle}{circle}</Accordion.Header>
+      <Accordion.Header>Company - Title</Accordion.Header>
       <Accordion.Body>
         {circle} Topic 1 <br/>
         {circle} Topic 2 <br/>
