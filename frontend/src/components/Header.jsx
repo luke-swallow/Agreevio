@@ -4,7 +4,7 @@ import "../styles/Header.css";
 
 function Header(){
   return(
-    <Navbar bg="light" >
+    <Navbar bg="light" expand="lg">
       <Container className="navbar">
         <Nav.Link href="/"><Navbar.Brand>
           <Figure>
