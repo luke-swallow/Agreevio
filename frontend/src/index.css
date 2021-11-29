@@ -541,20 +541,35 @@ section {
 # Hero Section
 --------------------------------------------------------------*/
 .hero-section {
-  background: linear-gradient(to right, rgba(39, 70, 133, 0.8) 0%, rgba(61, 179, 197, 0.8) 100%);
+  background: linear-gradient(to right, rgba(39, 70, 133, 0.8) 0%, rgba(61, 179, 197, 0.8) 100%), url(../src/assets/img/hero-bg.jpg);
   position: relative;
 }
-
+.hero-section .wave {
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  z-index: 1;
+  bottom: -150px;
+}
+@media screen and (max-width: 992px) {
+  .hero-section .wave {
+    bottom: -180px;
+  }
+}
+.hero-section .wave svg {
+  width: 100%;
+}
 .hero-section, .hero-section > .container > .row {
-  height: 80vh;
-  min-height: 800px;
+  height: 100vh;
+  min-height: 880px;
 }
 .hero-section.inner-page {
   height: 60vh;
   min-height: 0;
 }
 .hero-section.inner-page .hero-text {
-  margin-top: -80px;
+  transform: translateY(-150px);
+  margin-top: -120px;
 }
 @media screen and (max-width: 992px) {
   .hero-section.inner-page .hero-text {
@@ -572,6 +587,11 @@ section {
     font-size: 2.5rem;
     text-align: center;
     margin-top: 40px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .hero-section .hero-text-image {
+    margin-top: 4rem;
   }
 }
 .hero-section p {

@@ -7,6 +7,16 @@ function SearchAgreements(){
 
 
   return(
+    <section className="section">
+      <div className="container">
+
+        <div class="row justify-content-center text-center mb-5">
+          <div class="col-md-5" data-aos="fade-up">
+            <h2 class="section-heading">Search User Agreements</h2>
+          </div>
+        </div>
+      </div>
+
   <div className="center">
     <InputGroup className="search-bar">
       <FormControl
@@ -18,8 +28,8 @@ function SearchAgreements(){
     </Button>
     </InputGroup>
     <SearchResults />
-
-  </div>
+    </div>
+  </section>
   );
 }
 export default SearchAgreements;
