@@ -1,10 +1,10 @@
 import {useState} from 'react';
-import { Accordion, Card, ToggleButton, ButtonGroup, Stack, Container, Row, Col} from 'react-bootstrap';
+import { Button, Card, ToggleButton, ButtonGroup, Stack, Container, Row, Col} from 'react-bootstrap';
 import FormRange from 'react-bootstrap/esm/FormRange';
 
 
 
-function Summary() {
+function Summary(props) {
   const [checked, setChecked] = useState(false);
   const [radioValue, setRadioValue] = useState('1');
 
@@ -13,6 +13,10 @@ function Summary() {
     { name: 'Paragraph', value: '1' },
   ];
   const [rangeValue, setRangeValue] = useState(1);
+
+  const summarizedTextList = props.summarizedText.map((clause) =>
+  <li>{clause}</li>
+);
 
   return (
     
@@ -64,16 +68,14 @@ function Summary() {
             <Card.Body>
               <Container>
                 <ul>
-                <li>Coffee</li>
-                <li>Tea</li>
-                <li>Milk</li>
+                {summarizedTextList}
               </ul>
               </Container>
 
             </Card.Body>
         </Card>
         </Row>
-        
+        <Button onClick={()=>props.back()}>Back</Button>
       </Container>
       
     
