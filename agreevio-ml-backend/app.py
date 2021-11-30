@@ -1,8 +1,9 @@
+from flask_cors import CORS
 from flask import Flask, request, jsonify
 from model import summarize_text
 
 app = Flask(__name__)
-
+CORS(app)
 
 @app.route('/')
 def main_page():
@@ -26,7 +27,7 @@ def summarize_string(input_string):
     return json_result
 
 
-@app.route('/summarizer/json', methods=["GET, POST"])
+@app.route('/summarizer/json', methods=["GET", "POST"])
 def summarize_json():
     input_text = request.json["input_text"]  # Should be a list
     results = summarize_text(input_text)
