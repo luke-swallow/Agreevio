@@ -19,7 +19,7 @@ function Summary() {
       <Container >
         <Row>
           <Col className="text-center">
-            <h1> Summary</h1>
+            <h1> Company Title here </h1>
           </Col>
         </Row>
         <Row>
@@ -56,7 +56,7 @@ function Summary() {
             </Stack>
             </Col>
                 </Row>
-                
+
               </Container>
             
             
