@@ -3,7 +3,7 @@ import "../styles/Footer.css";
 function Footer() {
   
   return(
-    <Navbar className="footer" style={{backgroundColor: "#43ADE2"}}>
+    <Navbar className="footer" style={{backgroundColor: "#43ADE2"}} fixed="bottom">
     <Container>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav" >

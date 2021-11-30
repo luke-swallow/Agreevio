@@ -1,15 +1,8 @@
 .footer {
-  background-color: "#43ADE2";
-  position: absolute;
-  bottom: 0;
   width: 100%;
   left: 0px;
 }
 
 .footer-buttons {
-  
-  margin-left: 30%;
-  
-  /* background-color: green; */
-  
+  margin-left: 35%;
 }
