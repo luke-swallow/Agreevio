@@ -1,0 +1,13 @@
+{
+  "model_name_or_path": "t5-small",
+  "do_train": true,
+  "do_eval": true,
+  "train_file": "./data/summarized_ua.csv",
+  "validation_file": "./data/summarized_ua.csv",
+  "output_dir": "./models/t5-small",
+  "source_prefix": "summarize: ",
+  "per_device_train_batch_size": 4,
+  "per_device_eval_batch_size": 4,
+  "overwrite_output_dir": true,
+  "predict_with_generate": true
+}
