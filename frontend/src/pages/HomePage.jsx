@@ -15,8 +15,6 @@ function HomePage() {
           </div>
         </div>
         
-        
-        
         <div class="row">
           <div class="col-md-4" data-aos="fade-up" data-aos-delay="">
             <div class="feature-1 text-center">
