@@ -1,13 +1,14 @@
-.search-bar {
-  width: 50%;
-}
+
 
 .search-results {
   margin: 30px;
-  width: 55%;
 }
 
 .search-button {
   background-color: lightskyblue;
   color: black;
 }
+
+
+
+
