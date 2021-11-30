@@ -1,12 +1,16 @@
 from flask import Flask, request, jsonify
 from model import summarize_text
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)
 
 
 @app.route('/')
 def main_page():
-    return "<h1> Welcome to the Agreevio Deep Learning Summarizer! </h1>"
+    response = jsonify("<h1> Welcome to the Agreevio Deep Learning Summarizer! </h1>")
+    response.headers.add("Access-Control-Allow-Origin", "*")
+    return response
 
 
 @app.route('/admin')
@@ -26,9 +30,9 @@ def summarize_string(input_string):
     return json_result
 
 
-@app.route('/summarizer/json', methods=["GET, POST"])
+@app.route('/summarizer/json', methods=["GET", "POST"])
 def summarize_json():
-    input_text = request.json["input_text"]  # Should be a list
+    input_text = request.get_json()["input_text"]  # Should be a list
     results = summarize_text(input_text)
 
     results_obj = {
