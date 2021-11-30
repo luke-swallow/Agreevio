@@ -9,6 +9,7 @@ import HomePage from './pages/HomePage';
 
 import "./styles/Common.css";
 import Enterprise from './pages/Enterprise';
+import Summary from './components/Summary';
 
 // enterprise component needs to be by itself. 
 // how do I do that
@@ -25,6 +26,7 @@ function App() {
       <Route path="/analyze" element={<AnaylzeAgreement />} />
       <Route path="/enterprise" element={<Enterprise />} />
       <Route path="result" element={<Results />} />
+      <Route path ="/summary" element={<Summary />} />
     </Routes>
     </BrowserRouter>
     <Footer />

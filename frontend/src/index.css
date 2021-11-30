@@ -130,6 +130,11 @@ section {
   background: #fff;
   color: #2d71a1;
 }
+.btn.btn-outline-blue {
+  background: #fff;
+  color: #2d71a1;
+}
+
 .btn.btn-primary {
   background: #2d71a1;
   background: linear-gradient(-45deg, #1391a5, #274685);

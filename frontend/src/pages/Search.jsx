@@ -2,34 +2,20 @@ import { InputGroup, FormControl, Button } from 'react-bootstrap';
 import SearchResults from '../components/SearchResults';
 import "../styles/Search.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import algoliasearch from 'algoliasearch';
+import { InstantSearch, SearchBox, Hits } from 'react-instantsearch-dom';
 
+const searchClient = algoliasearch('HDOSHNNRSV', 'fe5ffe6f93cfcd34b6269a5cac5bf24f');
 function SearchAgreements(){
 
-
   return(
-    <section className="section">
-      <div className="container">
-
-        <div class="row justify-content-center text-center mb-5">
-          <div class="col-md-5" data-aos="fade-up">
-            <h2 class="section-heading">Search User Agreements</h2>
-          </div>
-        </div>
-      </div>
-
-  <div className="center">
-    <InputGroup className="search-bar">
-      <FormControl
-        placeholder="Company Name"
-        aria-describedby="basic-addon2"
-      />
-      <Button className="search-button" id="button-addon2">
-      Button
-    </Button>
-    </InputGroup>
-    <SearchResults />
+    <div className="center">
+    <InstantSearch searchClient={searchClient} indexName="Agreevio">
+      <SearchBox />
+      <Hits />
+    </InstantSearch>
     </div>
-  </section>
   );
+
 }
 export default SearchAgreements;
