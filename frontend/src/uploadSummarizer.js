@@ -20,7 +20,6 @@ export async function callSummarizer(text){
         body: JSON.stringify(data),
       }).then(response => response.json())
       .then(data => {
-          debugger
         return data
       })
       .catch((error) => {
