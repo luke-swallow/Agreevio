@@ -17,9 +17,12 @@ function SearchResult(props) {
   
   return (
     <div className="search-results">
-    <Card onClick={()=>(alert('hello'))} >
+    <Card onClick={()=>{
+      props.displaySummary(true);
+      props.setText();
+      }} >
     <Card.Body >
-      <h4>{props.hit.title}</h4>
+      <h4>{props.title}</h4>
     </Card.Body>
     </Card>
     </div>
