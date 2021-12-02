@@ -30,7 +30,9 @@ def summarize_string(input_string):
 @app.route('/summarizer/json', methods=["GET", "POST"])
 def summarize_json():
     input_text = request.json["input_text"]  # Should be a list
-    results = summarize_text(input_text)
+    min_summ_length = request.json["min_summ_length"] if "min_summ_length" in request.json else 6
+    max_summ_length = request.json["max_summ_length"] if "max_summ_length" in request.json else 40
+    results = summarize_text(input_text, min_summ_length, max_summ_length)
 
     results_obj = {
         "input_text": input_text,
