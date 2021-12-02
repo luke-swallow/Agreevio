@@ -8,7 +8,7 @@ def download_model():
 	download(url, filename, quiet=False)
 	if os.path.isdir('models') is False:
 		os.mkdir('models')
-	unpack_archive(filename, 'models/t5-small')
+	unpack_archive(filename, 'models')
 	os.remove(filename)
 
 if __name__ == "__main__":
